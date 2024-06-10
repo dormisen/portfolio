@@ -1,0 +1,98 @@
+.about-container {
+    height: 100%;
+    width: 99%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: var(--background-color);
+}
+
+.left-sec {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+
+.right-sec {
+    display: flex;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    background-color: var(--color);
+    border: none;
+    border-radius: 5%;
+    flex-direction: column;
+
+}
+
+.right-sec h1 {
+    font-family: "Kanit";
+    display: flex;
+    align-self: center;
+}
+
+.right-sec p {
+    width: 400px;
+    font-weight: 300;
+    align-self: center;
+    font-size: medium;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0;
+}
+
+.left-sec div {
+    height: 250px;
+    width: 200px;
+    border-radius: 10%;
+    background-color: var(--color);
+}
+
+.l-grid {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    position: fixed;
+    bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    grid-template-columns: auto auto;
+
+}
+
+.whitep {
+    color: white;
+}
+
+.blackp {
+    color: black;
+}
+
+input {
+    width: 80px;
+    cursor: progress;
+}
+
+.f-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.s-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}

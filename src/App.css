@@ -1,0 +1,94 @@
+div {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--color);
+  font-family: "Kanit";
+}
+
+
+.light-mode {
+  --background-color: #fff891ef;
+  --color: #0d0c0c;
+}
+
+.dark-mode {
+  --background-color: #0d0c0c;
+  --color: white;
+}
+
+header {
+  background-color: var(--background-color);
+  font-family: "Kanit";
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+}
+
+nav a {
+  color: var(--color);
+  text-decoration: none;
+  position: relative;
+}
+
+.light-dark {
+  width: 70px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-dark img {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  justify-self: center;
+  align-self: center;
+}
+
+.active {
+  color: rgb(177, 152, 15);
+  transition: all 0.5s ease;
+  position: relative;
+
+}
+
+li a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  background:  rgb(177, 152, 15);
+  transition: width .5s ease-in-out;
+}
+
+li a:hover::after {
+  width: 100%;
+}
