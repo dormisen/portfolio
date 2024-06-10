@@ -23,6 +23,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^3.0.1",
+    "resend": "^3.2.0",
     "start": "^5.1.0"
   },
   "devDependencies": {
