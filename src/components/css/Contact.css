@@ -86,6 +86,7 @@
     max-width: 350px;
     font-size: xx-large;
     text-align: left;
+    text-wrap: wrap;
     
 }
 .whitep{
@@ -128,7 +129,7 @@
   
   
     .Getin p {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
   
@@ -144,6 +145,6 @@
     }
   
     .Getin p {
-      font-size: 14px;
+      font-size: 18px;
     }
   }

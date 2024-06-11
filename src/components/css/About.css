@@ -1,8 +1,8 @@
 .about-container {
     width: 99%;
     padding-top: 40px;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto;
     gap: 20px;
     background-color: var(--background-color);
     flex-wrap: wrap;
