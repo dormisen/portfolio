@@ -111,7 +111,7 @@ input {
       gap: 5px;
     }
     .l-grid{
-        position: relative;
+        left: 0;
     }    
     .right-sec p {
       width: 95%;
@@ -138,7 +138,7 @@ input {
       grid-template-columns: auto;
     }
   .l-grid{
-    position: relative;
+    left: 0;
   }
     .right-sec p {
       width: 90%;
