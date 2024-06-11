@@ -31,7 +31,6 @@
     border: none;
     border-radius: 5%;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .right-sec h1 {
@@ -116,8 +115,9 @@ input {
     .right-sec p {
       width: 95%;
       padding: 15px;
-    }
-  }
+      overflow-y: scroll;
+      }
+      }
   @media (max-width: 768px) {
     .about-container {
       flex-direction: column;
@@ -139,6 +139,7 @@ input {
     .right-sec p {
       width: 90%;
       padding: 20px;
+    overflow-y: scroll;
     }
   }
   
