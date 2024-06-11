@@ -127,25 +127,17 @@
     .contact-form textarea {
       width: 90%;
     }
-  
-  
-    .Getin p {
-      font-size: 20px;
-    }
   }
   
   @media (max-width: 480px) {
     .contact-form form,
     .contact-container .Getin {
-      padding: 5px;
+      justify-content: center;
     }
   
     .contact-form input,
     .contact-form textarea {
       width: 90%;
     }
-  
-    .Getin p {
-      font-size: 18px;
-    }
+
   }
