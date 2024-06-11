@@ -17,6 +17,7 @@
     margin: auto;
     justify-content: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -29,6 +30,7 @@
     border: none;
     border-radius: 5%;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .right-sec h1 {
