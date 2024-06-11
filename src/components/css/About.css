@@ -24,7 +24,7 @@
 .right-sec {
     display: flex;
     height: 500px;
-    width: 500px;
+    max-width: 500px;
     margin: auto;
     background-color: var(--color);
     border: none;
@@ -44,8 +44,6 @@
     font-weight: 300;
     align-self: center;
     font-size: medium;
-    border: 1px solid;
-    border-radius: 20px;
     padding: 30px;
     margin: 0;
 }
