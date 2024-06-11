@@ -1,6 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Link, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
 import About from './components/About';
@@ -11,12 +10,11 @@ import "@fontsource/kanit";
 import "@fontsource/kanit/400.css"; 
 import "@fontsource/kanit/400-italic.css";
 
-
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     return localStorage.getItem('theme') === 'dark';
   });
-  
+
   useEffect(() => {
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
   }, [isDarkMode]);
@@ -24,8 +22,6 @@ function App() {
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
   };
-    var MyImg =Img;
-    var MyImg2 = Img2;
 
   return (
     <div className={isDarkMode ? 'dark-mode' : 'light-mode'}>
@@ -33,20 +29,20 @@ function App() {
         <header>
           <nav>
             <ul>
-              <li><NavLink to="/">Home</NavLink></li>
-              <li><NavLink to="/about">About</NavLink></li>
-              <li><NavLink to="/contact">Contact</NavLink></li>
+              <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
+              <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
+              <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
             </ul>
           </nav>
-          <div className='light-dark'>
-          <img src={!isDarkMode ? MyImg : MyImg2} onClick={toggleTheme} />
+          <div className='light-dark' onClick={toggleTheme}>
+            <img src={isDarkMode ? Img2 : Img} alt="Toggle Theme" />
           </div>
         </header>
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About IsDarkMode={isDarkMode}/>} />
-            <Route path="/contact" element={<Contact IsDarkmode={isDarkMode}/>} />
+            <Route path="/about" element={<About IsDarkMode={isDarkMode} />} />
+            <Route path="/contact" element={<Contact IsDarkMode={isDarkMode} />} />
           </Routes>
         </main>
       </Router>

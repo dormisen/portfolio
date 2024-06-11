@@ -6,6 +6,7 @@
     flex-direction: row;
     gap: 20px;
     background-color: var(--background-color);
+    flex-wrap: wrap;
 }
 
 .left-sec {
@@ -28,7 +29,6 @@
     border: none;
     border-radius: 5%;
     flex-direction: column;
-
 }
 
 .right-sec h1 {
@@ -59,11 +59,12 @@
     display: grid;
     justify-self: center;
     align-self: center;
-    position: fixed;
-    bottom: 50px;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+    left: 100%;
     justify-content: center;
     align-items: center;
-    column-gap: 30px;
     grid-template-columns: auto auto;
 
 }

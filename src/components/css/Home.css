@@ -65,9 +65,9 @@
 }
 
 .description {
-    position: fixed;
-    left: 25%;
-    bottom: 25%;
+    position: relative;
+    left: 50%;
+    bottom: 0;
     font-size: medium;
     font-weight: 100;
 
