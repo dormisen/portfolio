@@ -99,8 +99,9 @@ input {
 }
 @media (max-width: 480px) {
     .about-container {
-      padding: 20px 10px;
-      width: 80%;
+        padding: 20px 10px;
+        width: 80%;
+        grid-template-columns: auto;
     }
   
     .left-sec, .right-sec {
@@ -126,6 +127,7 @@ input {
       padding: 20px;
       width: 90%;
       gap: 30px;
+      grid-template-columns: auto;
     }
   
     .left-sec, .right-sec {
