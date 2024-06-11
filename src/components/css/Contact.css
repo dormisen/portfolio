@@ -111,7 +111,7 @@
     .contact-form form,
     .contact-container .Getin {
       max-width: 90%;
-      border-radius: 10px;
+      border-radius: 10px ;
       box-shadow: none;
     }
   
@@ -139,7 +139,9 @@
     .contact-container .Getin {
       max-width: 90%;
     }
-  
+  .Getin{
+    border-top-left-radius: 0;
+  }
     .contact-form input,
     .contact-form textarea {
       width: 90%;
