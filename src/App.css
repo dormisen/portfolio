@@ -106,4 +106,7 @@ li a:hover::after {
   nav ul li {
     margin: 5px 0;
   }
+  nav {
+    width: 80%;
+  }
 }
