@@ -124,7 +124,7 @@ input {
     .about-container {
       padding: 20px;
       width: 90%;
-      gap: 500px;
+      gap: 400px;
       grid-template-columns: auto;
     }
   
