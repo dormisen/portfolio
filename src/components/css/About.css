@@ -106,9 +106,10 @@ input {
     .left-sec, .right-sec {
       width: 80%;
     }
-  
+    
     .left-sec {
-      gap: 5px;
+        gap: 5px;
+    grid-template-columns: auto auto;
     }
     .l-grid{
         left: 0;
