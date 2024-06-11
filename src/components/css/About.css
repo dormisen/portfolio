@@ -137,7 +137,7 @@ input {
       
     .left-sec {
       gap: 10px;
-      grid-template-columns: auto auto;
+      grid-template-columns: auto ;
       }
       .l-grid{
       position: relative;
