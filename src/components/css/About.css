@@ -113,8 +113,9 @@ input {
     }
     .l-grid{
         left: 0;
-    }    
-    .right-sec p {
+        position: relative;
+        }    
+        .right-sec p {
       width: 95%;
       padding: 15px;
       overflow-y: scroll;
@@ -132,13 +133,14 @@ input {
     .left-sec, .right-sec {
       width: 90%;
       max-width: none;
-    }
-  
+      }
+      
     .left-sec {
       gap: 10px;
       grid-template-columns: auto;
-    }
-  .l-grid{
+      }
+      .l-grid{
+      position: relative;
     left: 0;
   }
     .right-sec p {
