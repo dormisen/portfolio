@@ -2,7 +2,11 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
+      "src": "server.mjs",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "vite.config.js",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
@@ -11,12 +15,12 @@
   ],
   "routes": [
     {
-      "src": "/index.html",
-      "dest": "/index.html"
+      "src": "/contact",
+      "dest": "server.mjs"
     },
     {
       "src": "/(.*)",
-      "dest": "/dist/$1"
+      "dest": "server.mjs"
     }
   ]
 }

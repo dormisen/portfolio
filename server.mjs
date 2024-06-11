@@ -2,17 +2,12 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import { Resend } from 'resend';
-import { config } from 'dotenv';
-
-config();
 
 const app = express();
 const router = express.Router();
 
 app.use(cors());
 app.use(express.json());
-app.use("/", router);
-app.listen(5000, console.log("server runnig on port 5000"))
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -42,6 +37,13 @@ router.post("/contact", async (req, res) => {
     console.error('Error in Resend:', error);
     res.status(500).json({ status: "ERROR", message: "Failed to send message" });
   }
+});
+
+app.use('/', router);
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
 
 export default app;
