@@ -9,14 +9,14 @@ function Contact(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
-
+  
     const { name, email, message } = e.target.elements;
     let details = {
       name: name.value,
       email: email.value,
       message: message.value,
     };
-
+  
     try {
       let response = await fetch("/contact", {
         method: "POST",
@@ -25,9 +25,17 @@ function Contact(props) {
         },
         body: JSON.stringify(details),
       });
-
+  
+      if (!response.ok) {
+        throw new Error(`Failed to send message: ${response.status} ${response.statusText}`);
+      }
+  
       let result = await response.json();
-      alert(result.status);
+      if (result.status === "Message Sent") {
+        alert("Message sent successfully!");
+      } else {
+        throw new Error(`Unexpected response: ${JSON.stringify(result)}`);
+      }
     } catch (error) {
       console.error("Error sending contact form:", error);
       alert("Failed to send message. Please try again later.");
@@ -35,7 +43,7 @@ function Contact(props) {
       setStatus("Submit");
     }
   };
-
+  
 
   return (
     <div className="contact-container">
