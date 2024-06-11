@@ -103,7 +103,7 @@
 @media (max-width: 768px) {
     .contact-container {
       flex-wrap: wrap;
-      align-items: center;
+      justify-content: center;
       width: 100%;
       grid-template-columns: auto;
     }
@@ -130,7 +130,7 @@
   
   
     .Getin p {
-      font-size: 20px;
+      font-size: auto;
     }
   }
   
@@ -146,6 +146,6 @@
     }
   
     .Getin p {
-      font-size: 18px;
+      font-size: auto;
     }
   }
