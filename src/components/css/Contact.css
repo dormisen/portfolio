@@ -1,18 +1,16 @@
 .contact-container {
-    height: 100%;
-    max-width: fit-content;
+    width: 100%;
     padding-top: 40px;
-    display: flex;
-    flex-direction: row;  
+    display: grid;
+    grid-template-columns: auto auto;  
     justify-content: center;
     background-color: var(--background-color);
     flex-wrap: wrap;
-
+    gap: 30px;
 }
-
 .contact-form form{
     height: 500px;
-    max-width: fit-content;
+    max-width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -72,8 +70,8 @@
     padding-left: 10px;
     }
 .contact-container .Getin{
-    height: 520px;
-    width: 500px;
+    height: 500px;
+    width: 100%;
     border-radius: 0 20px 20px 0;
     border-left: 1px solid white;
     display: flex;
@@ -81,12 +79,13 @@
     align-items: center;
     box-shadow: 0 5px 20px black;
     flex-wrap: wrap;
+    padding: 10px;
 
 }
 .Getin p{
     font-weight: 500;
-    width: 350px;
-    font-size: 30px;
+    max-width: 350px;
+    font-size: xx-large;
     text-align: left;
     
 }
@@ -101,3 +100,51 @@
     padding-bottom: 5px;
     border-bottom: 2px solid whitesmoke;
 }
+@media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+    }
+  
+    .contact-form form,
+    .contact-container .Getin {
+      max-width: 90%;
+      border-radius: 20px;
+      box-shadow: none;
+    }
+  
+    .contact-form form {
+      border-right: none;
+      border-bottom: 1px solid white;
+    }
+  
+    .contact-container .Getin {
+      border-left: none;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+    }
+  
+  
+    .Getin p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-form form,
+    .contact-container .Getin {
+      padding: 10px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+    }
+  
+    .Getin p {
+      font-size: 14px;
+    }
+  }
