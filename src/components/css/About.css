@@ -21,7 +21,7 @@
 }
 
 .right-sec {
-    display: grid;
+    display: flex;
     height: 500px;
     max-width: 500px;
     min-width: 200px;
@@ -124,8 +124,8 @@ input {
     .about-container {
       padding: 20px;
       width: 90%;
-      gap: 400px;
-      grid-template-columns: auto;
+      gap: 350px;
+      grid-template-columns: auto; 
     }
   
     .left-sec, .right-sec {
@@ -136,7 +136,7 @@ input {
       
     .left-sec {
       gap: 10px;
-      grid-template-columns: auto;
+      grid-template-columns: auto auto;
       }
       .l-grid{
       position: relative;
@@ -144,8 +144,8 @@ input {
   }
     .right-sec p {
       width: 90%;
-      padding: 16px;
-    overflow-y: scroll;
+      padding: 16px;       
+      overflow-y: scroll;
     }
   }
   
