@@ -52,8 +52,8 @@ function Contact(props) {
         </form>
       </section>
       <section className="Getin">
-        <h1 className={!props.IsDarkmode ? 'whitep' : 'blackp'}>Get in Touch </h1>
-        <p className={!props.IsDarkmode ? 'whitep' : 'blackp'}> Whether you want to get in touch ,talk about a project collaboration, or just say hi, i’d love to hear from you Simply fill the form and send me an email.</p>
+        <h1 className='blackp'>Get in Touch </h1>
+        <p className='blackp'> Whether you want to get in touch ,talk about a project collaboration, or just say hi, i’d love to hear from you Simply fill the form and send me an email.</p>
       </section>
     </div>
   );
