@@ -104,13 +104,13 @@
     .contact-container {
       flex-wrap: wrap;
       align-items: center;
-      width: 95%;
+      width: 100%;
       grid-template-columns: auto;
     }
   
     .contact-form form,
     .contact-container .Getin {
-      max-width: 95%;
+      max-width: 100%;
       border-radius: 10px;
       box-shadow: none;
     }
@@ -137,7 +137,7 @@
   @media (max-width: 480px) {
     .contact-form form,
     .contact-container .Getin {
-      max-width: 90%;
+      max-width: 100%;
     }
   
     .contact-form input,
