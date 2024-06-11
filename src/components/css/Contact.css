@@ -102,9 +102,10 @@
 }
 @media (max-width: 768px) {
     .contact-container {
-      flex-direction: column;
+      flex-wrap: wrap;
       align-items: center;
       width: 95%;
+      grid-template-columns: auto;
     }
   
     .contact-form form,
