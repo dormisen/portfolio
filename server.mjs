@@ -41,7 +41,7 @@ router.post("/contact", async (req, res) => {
 
 app.use('/', router);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 2465;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
