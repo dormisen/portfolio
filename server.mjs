@@ -6,7 +6,10 @@ import { Resend } from 'resend';
 const app = express();
 const router = express.Router();
 
-app.use(cors());
+app.use(cors({
+  origin: `https://ridaaitiquen.vercel.app/${PORT}`, 
+  credentials: true  
+}));
 app.use(express.json());
 
 const resend = new Resend(process.env.RESEND_API_KEY);
