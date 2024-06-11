@@ -122,7 +122,9 @@
       top: 5%;
       left: 5%;
     }
-  
+    .name span{
+        margin-top: -20px;
+    }
     .description {
       font-size: small;
       left: 50%;
