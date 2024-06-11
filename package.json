@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "node api/index.js",
+    "start": "node server.mjs",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "server": "node api/index.js"
+    "server": "node server.mjs"
   },
   "dependencies": {
     "@fontsource/kanit": "^5.0.20",

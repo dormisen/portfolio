@@ -4,6 +4,7 @@ import cors from 'cors';
 import { Resend } from 'resend';
 import { config } from 'dotenv';
 
+// Load environment variables
 config();
 
 const app = express();
