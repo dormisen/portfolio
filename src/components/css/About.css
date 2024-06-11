@@ -21,7 +21,7 @@
 }
 
 .right-sec {
-    display: flex;
+    display: grid;
     height: 500px;
     max-width: 500px;
     min-width: 200px;
@@ -122,16 +122,16 @@ input {
       }
   @media (max-width: 768px) {
     .about-container {
-      align-items: center;
       padding: 20px;
       width: 90%;
-      gap: 30px;
+      gap: 500px;
       grid-template-columns: auto;
     }
   
     .left-sec, .right-sec {
       width: 90%;
       max-width: none;
+      align-self: center;
       }
       
     .left-sec {
@@ -140,7 +140,7 @@ input {
       }
       .l-grid{
       position: relative;
-    left: 0;
+      left: auto;
   }
     .right-sec p {
       width: 90%;
