@@ -4,7 +4,6 @@ import cors from 'cors';
 import { Resend } from 'resend';
 import { config } from 'dotenv';
 
-// Load environment variables
 config();
 
 const app = express();
@@ -12,7 +11,8 @@ const router = express.Router();
 
 app.use(cors());
 app.use(express.json());
-app.use("/api", router);
+app.use("/", router);
+app.listen(5000, console.log("server runnig on port 5000"))
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
