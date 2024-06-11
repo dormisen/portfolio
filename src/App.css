@@ -100,7 +100,9 @@ li a:hover::after {
     flex-direction: column;
     align-items: center;
   }
-
+.light-dark img{
+  justify-self: left;
+}
   nav ul li {
     margin: 5px 0;
   }
