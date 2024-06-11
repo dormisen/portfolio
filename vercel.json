@@ -20,7 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "server.mjs"
+      "dest": "dist$1"
     }
   ]
 }
